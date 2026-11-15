@@ -1,40 +1,52 @@
 # ==========================================
 # Kiru Leathers Production Dockerfile
 # ==========================================
-FROM node:20-alpine AS builder
+FROM node:22-bookworm-slim AS builder
 
 WORKDIR /app
 
-# Copy root package files and install frontend dependencies
-COPY package*.json ./
-RUN npm ci
+# Install native tools if needed
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    python3 \
+    make \
+    g++ \
+    && rm -rf /var/lib/apt/lists/*
 
-# Copy full source and build frontend (TypeScript + Vite)
+# Copy package manifests and install frontend deps
+COPY package*.json ./
+RUN npm install
+
+# Copy source code and build production assets
 COPY . .
 RUN npm run build
 
 # ==========================================
 # Production Runtime Stage
 # ==========================================
-FROM node:20-alpine AS runner
+FROM node:22-bookworm-slim AS runner
 
 WORKDIR /app
 ENV NODE_ENV=production
 ENV PORT=5000
 
+# Install build tools for native Node addons (better-sqlite3)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    python3 \
+    make \
+    g++ \
+    && rm -rf /var/lib/apt/lists/*
+
 # Install server dependencies
 COPY server/package*.json ./server/
-RUN cd server && npm ci --omit=dev
+RUN cd server && npm install --omit=dev
 
-# Copy built frontend assets from builder
+# Copy built frontend assets
 COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/public ./public
 
-# Copy server code
+# Copy backend server code
 COPY server ./server
 
-# Expose port
 EXPOSE 5000
 
-# Start unified server
 CMD ["node", "server/server.js"]
