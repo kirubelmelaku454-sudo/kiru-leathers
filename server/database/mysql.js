@@ -7,12 +7,18 @@ let pool = null;
 const initMySQL = async () => {
   if (pool) return pool;
 
+  const host = process.env.MYSQL_HOST || process.env.MYSQLHOST || 'localhost';
+  const port = parseInt(process.env.MYSQL_PORT || process.env.MYSQLPORT || '3306', 10);
+  const user = process.env.MYSQL_USER || process.env.MYSQLUSER || 'root';
+  const password = process.env.MYSQL_PASSWORD || process.env.MYSQLPASSWORD || '';
+  const database = process.env.MYSQL_DATABASE || process.env.MYSQLDATABASE || 'kiru_atelier';
+
   pool = mysql.createPool({
-    host: process.env.MYSQL_HOST || 'localhost',
-    port: parseInt(process.env.MYSQL_PORT || '3306', 10),
-    user: process.env.MYSQL_USER || 'root',
-    password: process.env.MYSQL_PASSWORD || '',
-    database: process.env.MYSQL_DATABASE || 'kiru_atelier',
+    host,
+    port,
+    user,
+    password,
+    database,
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0
