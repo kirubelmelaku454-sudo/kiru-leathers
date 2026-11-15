@@ -1,0 +1,179 @@
+[
+  {
+    "id": "KL-889665",
+    "customer": {
+      "fullName": "Kirubel Melaku",
+      "email": "kirubelmelaku454@gmail.com",
+      "phone": "0931058886",
+      "address": "bole",
+      "city": "Addis Ababa",
+      "paymentMethod": "chapa",
+      "deliveryZoneId": "aa-bole",
+      "deliveryZoneName": "Bole, Atlas, Rwanda, Medhanialem"
+    },
+    "items": [
+      {
+        "product": {
+          "id": "wlt-1",
+          "name": "Slim Bifold Leather Folio",
+          "price": 180,
+          "category": "wallets",
+          "categoryLabel": "Wallets & Small Goods",
+          "rating": 4.9,
+          "reviewsCount": 210,
+          "description": "Saddle-stitched slim wallet with RFID protection.",
+          "images": [
+            "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&q=80"
+          ],
+          "pinterestUrl": "https://www.pinterest.com/pin/1126674031811785456/",
+          "colors": [
+            {
+              "name": "Cognac",
+              "hex": "#8B4513"
+            }
+          ],
+          "sizes": [
+            "Compact"
+          ]
+        },
+        "color": {
+          "name": "Cognac",
+          "hex": "#8B4513"
+        },
+        "size": "Compact",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 180,
+    "discount": 0,
+    "shipping": 2,
+    "totalAmount": 182,
+    "currency": "USD",
+    "paymentMethod": "chapa",
+    "paymentStatus": "Approved",
+    "deliveryZoneId": "aa-bole",
+    "deliveryZoneName": "Bole, Atlas, Rwanda, Medhanialem (Same-Day Hand Delivery (2 - 4 Hours))",
+    "status": "Processing",
+    "createdAt": "2026-11-06T19:40:37.781Z",
+    "trackingNumber": "TRK-PNI76HD",
+    "notifications": [
+      {
+        "id": "notif_1793994037781_gkgabq",
+        "type": "order_placed",
+        "title": "Order Confirmation Received",
+        "message": "Thank you for ordering with Kiru Leathers. Your order #KL-889665 for USD 182 has been registered and is being reviewed.",
+        "timestamp": "2026-11-06T19:40:37.781Z",
+        "channel": "sms"
+      }
+    ]
+  },
+  {
+    "id": "order-1791568470046",
+    "items": [
+      {
+        "product": {
+          "id": "2",
+          "name": "Atelier Heritage Tote",
+          "price": 850,
+          "category": "bags",
+          "description": "Structured silhouette featuring vegetable-tanned leather and hand-stitched handles.",
+          "images": [
+            "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80"
+          ],
+          "colors": [
+            {
+              "name": "Cognac",
+              "hex": "#9E4712"
+            }
+          ],
+          "sizes": [
+            "One Size"
+          ]
+        },
+        "color": {
+          "name": "Cognac",
+          "hex": "#9E4712"
+        },
+        "size": "L",
+        "quantity": 1
+      }
+    ],
+    "totalAmount": 850,
+    "createdAt": "2026-10-09T17:54:30.046Z"
+  },
+  {
+    "id": "order-1791568507456",
+    "items": [
+      {
+        "product": {
+          "id": "1",
+          "name": "The Sovereign Biker Jacket",
+          "price": 1250,
+          "category": "jackets",
+          "description": "Handcrafted from full-grain Italian calfskin with solid brass hardware.",
+          "images": [
+            "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&q=80"
+          ],
+          "colors": [
+            {
+              "name": "Obsidian Black",
+              "hex": "#111111"
+            },
+            {
+              "name": "Mahogany Gold",
+              "hex": "#4A2E1B"
+            }
+          ],
+          "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ]
+        },
+        "color": {
+          "name": "Obsidian Black",
+          "hex": "#111111"
+        },
+        "size": "L",
+        "quantity": 1
+      }
+    ],
+    "totalAmount": 1250,
+    "createdAt": "2026-10-09T17:55:07.456Z"
+  },
+  {
+    "id": "order-1791568991727",
+    "items": [
+      {
+        "product": {
+          "id": "2",
+          "name": "Atelier Heritage Tote",
+          "price": 850,
+          "category": "bags",
+          "description": "Structured silhouette featuring vegetable-tanned leather and hand-stitched handles.",
+          "images": [
+            "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80"
+          ],
+          "colors": [
+            {
+              "name": "Cognac",
+              "hex": "#9E4712"
+            }
+          ],
+          "sizes": [
+            "One Size"
+          ]
+        },
+        "color": {
+          "name": "Cognac",
+          "hex": "#9E4712"
+        },
+        "size": "One Size",
+        "quantity": 1
+      }
+    ],
+    "totalAmount": 850,
+    "createdAt": "2026-10-09T18:03:11.727Z"
+  }
+]

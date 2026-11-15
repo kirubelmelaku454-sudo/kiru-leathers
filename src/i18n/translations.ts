@@ -1,0 +1,205 @@
+export type Language = 'en' | 'am';
+
+export const translations = {
+  en: {
+    // Navigation
+    brandTitle: 'KIRU LEATHERS',
+    brandSubtitle: 'Addis Ababa Atelier',
+    collection: 'Collection',
+    atelier: 'Craftsmanship',
+    lookbook: 'Lookbook',
+    bespoke: 'Bespoke Studio',
+    about: 'Atelier Story',
+    contact: 'Contact',
+    currency: 'Currency',
+    signIn: 'Sign In',
+    account: 'Account',
+    adminPortal: 'Admin Atelier',
+    trackOrder: 'Track Order',
+    cart: 'Cart',
+    wishlist: 'Wishlist',
+
+    // Hero & Banner
+    heroTitle: 'Mastery in Ethiopian Full-Grain Leather',
+    heroSubtitle: 'Heirloom jackets, weekenders, and small leather goods meticulously hand-stitched by master artisans in Addis Ababa.',
+    exploreCatalog: 'Explore Collection',
+    customOrderBtn: 'Design Bespoke Piece',
+
+    // Catalog & Filters
+    catalogTitle: 'Curated Atelier Collection',
+    searchPlaceholder: 'Search handcrafted leather goods...',
+    allCategories: 'All Pieces',
+    jackets: 'Jackets',
+    bags: 'Bags & Luggage',
+    footwear: 'Footwear',
+    wallets: 'Wallets & Acc.',
+    belts: 'Luxury Belts',
+    filterTitle: 'Filter & Refine',
+    inStockOnly: 'In Stock Only',
+    priceRange: 'Price Range',
+    sortBy: 'Sort By',
+    sortFeatured: 'Featured Pieces',
+    sortPriceAsc: 'Price: Low to High',
+    sortPriceDesc: 'Price: High to Low',
+    sortRating: 'Highest Rated',
+    sortNewest: 'New Arrivals',
+    noProductsFound: 'No artisan pieces match your current filters.',
+    resetFilters: 'Reset Filters',
+
+    // Product Card & Details
+    addToCart: 'Add to Cart',
+    customizePiece: 'Bespoke Monogram',
+    quickView: 'Quick View',
+    outOfStock: 'Sold Out',
+    onlyFewLeft: 'Only {count} remaining in atelier',
+    handcraftedNotice: 'Hand-dyed & saddle stitched in Addis Ababa',
+    viewDetails: 'Inspect Piece',
+
+    // Bespoke Studio Modal
+    bespokeTitle: 'Personalized Monogram & Bespoke Studio',
+    bespokeSubtitle: 'Emboss your heirloom piece with custom hot-foil monogramming or bespoke artisanal specifications.',
+    selectProduct: 'Select Item to Personalize',
+    monogramLetters: 'Initials (Up to 4 Letters)',
+    monogramPlaceholder: 'e.g. K.T',
+    foilFinish: 'Embossing Foil Finish',
+    goldFoil: 'Artisan 24K Gold Foil',
+    silverFoil: 'Brushed Silver Foil',
+    blindDeboss: 'Blind Heat Deboss (Pure Leather)',
+    leatherFinish: 'Leather Hide Selection',
+    fullGrain: 'Highland Full-Grain Cowhide',
+    pullUp: 'Oiled Pull-Up Leather (Ages with Patina)',
+    suede: 'Velvety Nubuck Suede',
+    bespokeNotes: 'Custom Sizing / Special Requests',
+    bespokeNotesPlaceholder: 'e.g. Sleeve length +2cm, custom gift message...',
+    addBespokeToCart: 'Add Bespoke Piece to Bag',
+    livePreview: 'Live Atelier Stamp Preview',
+
+    // Cart & Checkout
+    shoppingBag: 'Shopping Bag',
+    emptyBag: 'Your shopping bag is empty',
+    subtotal: 'Subtotal',
+    deliveryFee: 'Delivery Fee',
+    artisanDiscount: 'Artisan Discount',
+    totalAmount: 'Total Due',
+    proceedToCheckout: 'Proceed to Checkout',
+    couponCode: 'Voucher / Coupon Code',
+    applyCoupon: 'Apply',
+
+    // Order Tracking & Stages
+    orderStatusTitle: 'Real-Time Atelier Tracking',
+    stagePlaced: 'Order Placed',
+    stagePaymentVerification: 'Payment Verification',
+    stageInAtelier: 'In Atelier (Handcrafting)',
+    stageShipped: 'Dispatched for Delivery',
+    stageDelivered: 'Delivered to Collector',
+
+    // Admin
+    adminDashboard: 'Atelier Operations Dashboard',
+    totalRevenue: 'Total Revenue',
+    ordersArchive: 'Orders Registry',
+    inventoryStatus: 'Inventory & Materials',
+    analytics: 'Analytics & Trends',
+    exportOrdersCsv: 'Export Orders (CSV)'
+  },
+
+  am: {
+    // Navigation
+    brandTitle: 'ኪሩ ሌዘር',
+    brandSubtitle: 'አዲስ አበባ አተሌ',
+    collection: 'ስብስቦች',
+    atelier: 'የእጅ ጥበብ',
+    lookbook: 'ሉክቡክ',
+    bespoke: 'የግል ማበጃ ስቱዲዮ',
+    about: 'ስለ እኛ',
+    contact: 'አግኙን',
+    currency: 'የገንዘብ አይነት',
+    signIn: 'ግባ',
+    account: 'መለያ',
+    adminPortal: 'የአስተዳዳሪ ክፍል',
+    trackOrder: 'ትዕዛዝ ተከታተል',
+    cart: 'ጋሪ',
+    wishlist: 'ምኞት ዝርዝር',
+
+    // Hero & Banner
+    heroTitle: 'ከፍተኛ ጥራት ያለው የኢትዮጵያ ንፁህ የቆዳ ውጤቶች',
+    heroSubtitle: 'በአዲስ አበባ ዋና የእጅ ጥበብ ባለሙያዎች በጥንቃቄ የተሰፉ ጃኬቶች፣ ቦርሳዎች እና የቆዳ ጫማዎች።',
+    exploreCatalog: 'ስብስቦችን ይመልከቱ',
+    customOrderBtn: 'የግል ንድፍ እዘዝ',
+
+    // Catalog & Filters
+    catalogTitle: 'የእጅ ጥበብ ስብስቦች',
+    searchPlaceholder: 'የቆዳ ውጤቶችን እዚህ ይፈልጉ...',
+    allCategories: 'ሁሉም እቃዎች',
+    jackets: 'ጃኬቶች',
+    bags: 'ቦርሳዎች',
+    footwear: 'ጫማዎች',
+    wallets: 'ቦርሳ እና መያዣዎች',
+    belts: 'የቆዳ ቀበቶዎች',
+    filterTitle: 'አጣራ እና ለይ',
+    inStockOnly: 'በክምችት ያሉ ብቻ',
+    priceRange: 'የዋጋ ክልል',
+    sortBy: 'አደራጅ በ',
+    sortFeatured: 'ተመራጭ እቃዎች',
+    sortPriceAsc: 'ዋጋ፡ ከዝቅተኛ ወደ ከፍተኛ',
+    sortPriceDesc: 'ዋጋ፡ ከከፍተኛ ወደ ዝቅተኛ',
+    sortRating: 'ከፍተኛ ደረጃ የተሰጣቸው',
+    sortNewest: 'አዳዲስ የገቡ',
+    noProductsFound: 'ከመረጡት መስፈርት ጋር የሚስማማ እቃ አልተገኘም።',
+    resetFilters: 'ማጣሪያውን አፅዳ',
+
+    // Product Card & Details
+    addToCart: 'ወደ ጋሪ ጨምር',
+    customizePiece: 'የግል ፊደል ቅርጽ (ሞኖግራም)',
+    quickView: 'በፍጥነት ይመልከቱ',
+    outOfStock: 'አልቋል',
+    onlyFewLeft: 'በአተሌው የቀረው {count} ብቻ ነው',
+    handcraftedNotice: 'በአዲስ አበባ በእጅ የተሰራ እና የተሰፋ',
+    viewDetails: 'ዝርዝሩን ይመልከቱ',
+
+    // Bespoke Studio Modal
+    bespokeTitle: 'የግል ፊደል ቅርጽ እና የልዩ ንድፍ ስቱዲዮ',
+    bespokeSubtitle: 'በመረጡት የቆዳ እቃ ላይ በወርቅ፣ በብር ወይም በሙቀት የታተመ የስምዎ መጀመሪያ ፊደላት ያትሙ።',
+    selectProduct: 'የሚታተምበትን እቃ ይምረጡ',
+    monogramLetters: 'የመጀመሪያ ፊደላት (እስከ 4 ፊደል)',
+    monogramPlaceholder: 'ለምሳሌ፡ ኪ.ተ',
+    foilFinish: 'የማተሚያው ቀለም አይነት',
+    goldFoil: 'የ24 ኪሎ ወርቅ ቀለም ህትመት',
+    silverFoil: 'የብር ቀለም ህትመት',
+    blindDeboss: 'በሙቀት ብቻ የታተመ (ንጹህ ቆዳ)',
+    leatherFinish: 'የቆዳ አይነት ምርጫ',
+    fullGrain: 'የደጋ ከብት ንጹህ ሙሉ ቆዳ (Full-Grain)',
+    pullUp: 'የዘይት ቆዳ (Pull-Up Leather)',
+    suede: 'ስስ ለስላሳ ቆዳ (Nubuck Suede)',
+    bespokeNotes: 'የተለየ ልኬት ወይም ተጨማሪ ማስታወሻ',
+    bespokeNotesPlaceholder: 'ለምሳሌ፡ የእጅ ርዝመት +2 ሳ.ሜ ወይም የስጦታ መልዕክት...',
+    addBespokeToCart: 'ልዩ ትዕዛዙን ወደ ጋሪ ጨምር',
+    livePreview: 'የቀጥታ ህትመት እይታ',
+
+    // Cart & Checkout
+    shoppingBag: 'የግዢ ጋሪ',
+    emptyBag: 'የግዢ ጋሪዎ ባዶ ነው',
+    subtotal: 'የእቃዎች ድምር',
+    deliveryFee: 'የማጓጓዣ ክፍያ',
+    artisanDiscount: 'የቅናሽ ኩፖን',
+    totalAmount: 'አጠቃላይ ድምር',
+    proceedToCheckout: 'ወደ ክፍያ ይቀጥሉ',
+    couponCode: 'የቅናሽ ኮድ (Coupon)',
+    applyCoupon: 'ተግብር',
+
+    // Order Tracking & Stages
+    orderStatusTitle: 'የቀጥታ ትዕዛዝ ክትትል',
+    stagePlaced: 'ትዕዛዝ ተቀብለናል',
+    stagePaymentVerification: 'ክፍያ እየተረጋገጠ ነው',
+    stageInAtelier: 'በአተሌው እየተሰራ ነው',
+    stageShipped: 'ለንኪ እና ማጓጓዝ ወጥቷል',
+    stageDelivered: 'ለደንበኛው ደርሷል',
+
+    // Admin
+    adminDashboard: 'የአተሌው ስራ አመራር ዳሽቦርድ',
+    totalRevenue: 'አጠቃላይ ገቢ',
+    ordersArchive: 'የትዕዛዞች መዝገብ',
+    inventoryStatus: 'የክምችት እና እቃዎች ሁኔታ',
+    analytics: 'ትንታኔ እና መረጃ',
+    exportOrdersCsv: 'ትዕዛዞችን በ CSV አውርድ'
+  }
+};

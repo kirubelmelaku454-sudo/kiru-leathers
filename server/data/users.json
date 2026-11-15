@@ -1,0 +1,35 @@
+[
+  {
+    "id": "usr_admin_001",
+    "name": "Kirubel Atelier Admin",
+    "email": "admin@kiruleathers.com",
+    "passwordHash": "$2b$10$cmXpwGzgE1dLSn8wQS3TfOqhQ5wpGaq7A44bTcGjyiVAuerSA8oYG",
+    "role": "admin",
+    "phone": "+251911002233",
+    "city": "Addis Ababa",
+    "address": "Bole Subcity, House 402",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cust_001",
+    "name": "Ermias Tadesse",
+    "email": "customer@kiruleathers.com",
+    "passwordHash": "$2b$10$la16KcA7adU89EpXAqPGmejzTCtyKO8S0TNOoiXR7IgQLejIHOX0q",
+    "role": "customer",
+    "phone": "+251912345678",
+    "city": "Addis Ababa",
+    "address": "Kazanchis, Guinea Conakry St",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "usr_1793993960679_cz4w6",
+    "name": "Kirubel Melaku",
+    "email": "kirubelmelaku454@gmail.com",
+    "passwordHash": "$2b$10$LwCgYTSLguNXAiuPefYptOcSzPxPnw2zyxxIt1OCb6xSZuAQlKxQi",
+    "role": "admin",
+    "phone": "+251911002233",
+    "city": "Addis Ababa",
+    "address": "Bole Subcity, Addis Ababa",
+    "createdAt": "2026-11-06T19:39:20.679Z"
+  }
+]
