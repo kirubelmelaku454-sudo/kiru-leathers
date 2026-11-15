@@ -1,623 +1,1346 @@
 [
   {
-    "id": "jkt-1",
-    "name": "Sovereign Leather Jacket Vol. 1",
-    "price": 1250,
-    "category": "jackets",
-    "categoryLabel": "Jackets",
-    "rating": 4.9,
-    "reviewsCount": 128,
-    "description": "Handcrafted full-grain Italian leather jacket with antique brass trim.",
-    "images": ["https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/62628251062267210/",
-    "colors": [{ "name": "Obsidian Black", "hex": "#111111" }],
-    "sizes": ["S", "M", "L", "XL"]
-  },
-  {
-    "id": "jkt-2",
-    "name": "Vintage Oak Leather Jacket",
-    "price": 1300,
-    "category": "jackets",
-    "categoryLabel": "Jackets",
-    "rating": 4.8,
-    "reviewsCount": 94,
-    "description": "Premium distressed leather jacket with custom hardware.",
-    "images": ["https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/577164508487851846/",
-    "colors": [{ "name": "Brown", "hex": "#3D2314" }],
-    "sizes": ["M", "L", "XL"]
-  },
-  {
-    "id": "jkt-3",
-    "name": "Heritage Rider Biker Jacket",
-    "price": 1180,
-    "category": "jackets",
-    "categoryLabel": "Jackets",
-    "rating": 5.0,
-    "reviewsCount": 42,
-    "description": "Classic rider style with smooth interior silk lining.",
-    "images": ["https://images.unsplash.com/photo-1520975954732-35dd22299614?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/167266573655506060/",
-    "colors": [{ "name": "Black", "hex": "#111111" }],
-    "sizes": ["S", "M", "L"]
-  },
-  {
-    "id": "jkt-4",
-    "name": "Tuscan Urban Biker",
-    "price": 1220,
-    "category": "jackets",
-    "categoryLabel": "Jackets",
-    "rating": 4.7,
-    "reviewsCount": 65,
-    "description": "Italian tanned calfskin with modern tailored silhouette.",
-    "images": ["https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/4592123643796070464/",
-    "colors": [{ "name": "Cognac", "hex": "#9E4712" }],
-    "sizes": ["M", "L", "XL"]
-  },
-  {
-    "id": "jkt-5",
-    "name": "Aviator Shearling Leather Jacket",
-    "price": 1400,
-    "category": "jackets",
-    "categoryLabel": "Jackets",
-    "rating": 4.9,
-    "reviewsCount": 110,
-    "description": "Heavy-duty cold weather aviator jacket with fur collar.",
-    "images": ["https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/4594656872270037056/",
-    "colors": [{ "name": "Dark Brown", "hex": "#2B1B17" }],
-    "sizes": ["M", "L", "XL", "XXL"]
-  },
-  {
-    "id": "jkt-6",
-    "name": "Modern Tailored Leather Blazer",
-    "price": 1150,
-    "category": "jackets",
-    "categoryLabel": "Jackets",
-    "rating": 4.6,
-    "reviewsCount": 38,
-    "description": "Formal tailored leather blazer for evening luxury wear.",
-    "images": ["https://images.unsplash.com/photo-1520975954732-35dd22299614?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/4594867996971434048/",
-    "colors": [{ "name": "Black", "hex": "#111111" }],
-    "sizes": ["S", "M", "L"]
-  },
-  {
-    "id": "jkt-7",
-    "name": "Field Utility Leather Coat",
-    "price": 1350,
-    "category": "jackets",
-    "categoryLabel": "Jackets",
-    "rating": 4.8,
-    "reviewsCount": 77,
-    "description": "Multiple pocket utility leather coat with durable zip closure.",
-    "images": ["https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/1108378158342842384/",
-    "colors": [{ "name": "Tan", "hex": "#A0522D" }],
-    "sizes": ["M", "L", "XL"]
-  },
-  {
-    "id": "jkt-8",
-    "name": "Cafe Racer Leather Jacket",
-    "price": 1280,
-    "category": "jackets",
-    "categoryLabel": "Jackets",
-    "rating": 4.9,
-    "reviewsCount": 89,
-    "description": "Minimalist cafe racer collar with snap button closure.",
-    "images": ["https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/522980575500846928/",
-    "colors": [{ "name": "Obsidian Black", "hex": "#111111" }],
-    "sizes": ["S", "M", "L", "XL"]
-  },
-  {
-    "id": "jkt-9",
-    "name": "Artisan Burnished Bomber",
-    "price": 1190,
-    "category": "jackets",
-    "categoryLabel": "Jackets",
-    "rating": 4.7,
-    "reviewsCount": 54,
-    "description": "Ribbed hem and cuff bomber jacket in full-grain leather.",
-    "images": ["https://images.unsplash.com/photo-1520975954732-35dd22299614?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/4599934539663171648/",
-    "colors": [{ "name": "Mahogany", "hex": "#3D2314" }],
-    "sizes": ["M", "L", "XL"]
-  },
-  {
-    "id": "jkt-10",
-    "name": "Sovereign Special Edition Jacket",
-    "price": 1500,
-    "category": "jackets",
-    "categoryLabel": "Jackets",
-    "rating": 5.0,
-    "reviewsCount": 150,
-    "description": "Limited series hand-burnished luxury leather jacket.",
-    "images": ["https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/49961877111664807/",
-    "colors": [{ "name": "Gold Amber", "hex": "#8B4513" }],
-    "sizes": ["S", "M", "L", "XL", "XXL"]
-  },
-  {
-    "id": "wlt-1",
-    "name": "Slim Bifold Leather Folio",
-    "price": 180,
-    "category": "wallets",
-    "categoryLabel": "Wallets & Small Goods",
-    "rating": 4.9,
-    "reviewsCount": 210,
-    "description": "Saddle-stitched slim wallet with RFID protection.",
-    "images": ["https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/1126674031811785456/",
-    "colors": [{ "name": "Cognac", "hex": "#8B4513" }],
-    "sizes": ["Compact"]
-  },
-  {
-    "id": "wlt-2",
-    "name": "Minimalist Front Pocket Wallet",
-    "price": 140,
-    "category": "wallets",
-    "categoryLabel": "Wallets & Small Goods",
-    "rating": 4.8,
-    "reviewsCount": 115,
-    "description": "Ultra-thin card sleeve for up to 8 cards and folded currency.",
-    "images": ["https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/1027172627486150388/",
-    "colors": [{ "name": "Black", "hex": "#111111" }],
-    "sizes": ["Compact"]
-  },
-  {
-    "id": "wlt-3",
-    "name": "Classic Trifold Wallet",
-    "price": 210,
-    "category": "wallets",
-    "categoryLabel": "Wallets & Small Goods",
-    "rating": 4.7,
-    "reviewsCount": 88,
-    "description": "Full capacity trifold leather wallet with coin compartment.",
-    "images": ["https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/661184789076669465/",
-    "colors": [{ "name": "Brown", "hex": "#3D2314" }],
-    "sizes": ["Standard"]
-  },
-  {
-    "id": "wlt-4",
-    "name": "Executive Passport & Travel Folio",
-    "price": 260,
-    "category": "wallets",
-    "categoryLabel": "Wallets & Small Goods",
-    "rating": 5.0,
-    "reviewsCount": 95,
-    "description": "Holds passport, travel documents, cards, and cash seamlessly.",
-    "images": ["https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/875246508811668664/",
-    "colors": [{ "name": "Tan", "hex": "#A0522D" }],
-    "sizes": ["Travel Size"]
-  },
-  {
-    "id": "wlt-5",
-    "name": "Zippered Leather Wallet",
-    "price": 195,
-    "category": "wallets",
-    "categoryLabel": "Wallets & Small Goods",
-    "rating": 4.8,
-    "reviewsCount": 62,
-    "description": "Full perimeter brass zipper for maximum security.",
-    "images": ["https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/51087777021056086/",
-    "colors": [{ "name": "Black", "hex": "#111111" }],
-    "sizes": ["Standard"]
-  },
-  {
-    "id": "wlt-6",
-    "name": "Money Clip Leather Sleeve",
-    "price": 130,
-    "category": "wallets",
-    "categoryLabel": "Wallets & Small Goods",
-    "rating": 4.6,
-    "reviewsCount": 40,
-    "description": "Integrated magnetic brass clip with quick-access card slots.",
-    "images": ["https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/422494008813855311/",
-    "colors": [{ "name": "Dark Brown", "hex": "#2B1B17" }],
-    "sizes": ["Compact"]
-  },
-  {
-    "id": "wlt-7",
-    "name": "Hand-Stitched Artisan Wallet",
-    "price": 220,
-    "category": "wallets",
-    "categoryLabel": "Wallets & Small Goods",
-    "rating": 4.9,
-    "reviewsCount": 73,
-    "description": "Burnished natural wax edges with antique brass button clasp.",
-    "images": ["https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/4599160510223597632/",
-    "colors": [{ "name": "Cognac", "hex": "#8B4513" }],
-    "sizes": ["Compact"]
-  },
-  {
-    "id": "wlt-8",
-    "name": "Long Continental Wallet",
-    "price": 250,
-    "category": "wallets",
-    "categoryLabel": "Wallets & Small Goods",
-    "rating": 4.7,
-    "reviewsCount": 51,
-    "description": "Full-length executive wallet featuring multiple bill compartments.",
-    "images": ["https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/439030663692022803/",
-    "colors": [{ "name": "Black", "hex": "#111111" }],
-    "sizes": ["Long"]
-  },
-  {
-    "id": "wlt-9",
-    "name": "Key Organizer & Card Holder",
-    "price": 120,
-    "category": "wallets",
-    "categoryLabel": "Wallets & Small Goods",
-    "rating": 4.5,
-    "reviewsCount": 33,
-    "description": "Dual functionality pouch with built-in brass key ring.",
-    "images": ["https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/381891243428173401/",
-    "colors": [{ "name": "Tan", "hex": "#A0522D" }],
-    "sizes": ["Compact"]
-  },
-  {
-    "id": "wlt-10",
-    "name": "Heritage Gold Stamp Card Case",
-    "price": 150,
-    "category": "wallets",
-    "categoryLabel": "Wallets & Small Goods",
-    "rating": 4.9,
-    "reviewsCount": 104,
-    "description": "Tuscan vegetable-tanned leather with gold foil Kiru crest.",
-    "images": ["https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/4597330877863832960/",
-    "colors": [{ "name": "Mahogany", "hex": "#3D2314" }],
-    "sizes": ["Compact"]
-  },
-  {
-    "id": "bag-1",
-    "name": "Monarch Executive Duffle",
-    "price": 890,
-    "category": "bags",
-    "categoryLabel": "Bags & Luggage",
-    "rating": 5.0,
-    "reviewsCount": 94,
-    "description": "Spacious travel duffle bag constructed from English bridle hide.",
-    "images": ["https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/687573068159838010/",
-    "colors": [{ "name": "Mahogany Gold", "hex": "#3D2314" }],
-    "sizes": ["45L"]
-  },
-  {
-    "id": "bag-2",
-    "name": "Atelier Heritage Tote Bag",
-    "price": 850,
-    "category": "bags",
-    "categoryLabel": "Bags & Luggage",
-    "rating": 4.9,
-    "reviewsCount": 88,
-    "description": "Structured leather tote bag with reinforced handles.",
-    "images": ["https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/55380270414521560/",
-    "colors": [{ "name": "Cognac", "hex": "#9E4712" }],
-    "sizes": ["One Size"]
-  },
-  {
-    "id": "bag-3",
-    "name": "Executive Leather Briefcase",
-    "price": 950,
-    "category": "bags",
-    "categoryLabel": "Bags & Luggage",
-    "rating": 4.8,
-    "reviewsCount": 65,
-    "description": "Dual-section laptop briefcase with brass lock key fob.",
-    "images": ["https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/1083467622888102150/",
-    "colors": [{ "name": "Black", "hex": "#111111" }],
-    "sizes": ["Fits 16 inch Laptop"]
-  },
-  {
-    "id": "bag-4",
-    "name": "Vagabond Travel Backpack",
-    "price": 780,
-    "category": "bags",
-    "categoryLabel": "Bags & Luggage",
-    "rating": 4.9,
-    "reviewsCount": 112,
-    "description": "Padded ergonomic leather straps with laptop slot.",
-    "images": ["https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/79868593388617144/",
-    "colors": [{ "name": "Brown", "hex": "#3D2314" }],
-    "sizes": ["One Size"]
-  },
-  {
-    "id": "bag-5",
-    "name": "Crossbody Messenger Bag",
-    "price": 640,
-    "category": "bags",
-    "categoryLabel": "Bags & Luggage",
-    "rating": 4.7,
-    "reviewsCount": 49,
-    "description": "Sleek messenger bag with adjustable shoulder webbing.",
-    "images": ["https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/1107955945867436978/",
-    "colors": [{ "name": "Tan", "hex": "#A0522D" }],
-    "sizes": ["Medium"]
-  },
-  {
-    "id": "bag-6",
-    "name": "Weekender Holdall Bag",
-    "price": 870,
-    "category": "bags",
-    "categoryLabel": "Bags & Luggage",
-    "rating": 4.9,
-    "reviewsCount": 78,
-    "description": "Classic cylinder holdall engineered for short trips.",
-    "images": ["https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/145804106684222349/",
-    "colors": [{ "name": "Dark Brown", "hex": "#2B1B17" }],
-    "sizes": ["40L"]
-  },
-  {
-    "id": "bag-7",
-    "name": "Structured Luxury Shoulder Bag",
-    "price": 690,
-    "category": "bags",
-    "categoryLabel": "Bags & Luggage",
-    "rating": 4.6,
-    "reviewsCount": 35,
-    "description": "Minimalist structured shoulder bag in full-grain calfskin.",
-    "images": ["https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/303570831157014378/",
-    "colors": [{ "name": "Black", "hex": "#111111" }],
-    "sizes": ["One Size"]
-  },
-  {
-    "id": "bag-8",
-    "name": "Leather Travel Toiletry Kit",
-    "price": 220,
-    "category": "bags",
-    "categoryLabel": "Bags & Luggage",
-    "rating": 4.8,
-    "reviewsCount": 90,
-    "description": "Water-resistant interior Doppler bag for grooming essentials.",
-    "images": ["https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/31947478604878327/",
-    "colors": [{ "name": "Cognac", "hex": "#8B4513" }],
-    "sizes": ["Small"]
-  },
-  {
-    "id": "bag-9",
-    "name": "Heritage Satchel Bag",
-    "price": 750,
-    "category": "bags",
-    "categoryLabel": "Bags & Luggage",
-    "rating": 4.7,
-    "reviewsCount": 44,
-    "description": "Vintage style satchel with antique brass buckle fasteners.",
-    "images": ["https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/1103944927428484153/",
-    "colors": [{ "name": "Mahogany", "hex": "#3D2314" }],
-    "sizes": ["Medium"]
-  },
-  {
-    "id": "bag-10",
-    "name": "Commuter Slim Backpack",
-    "price": 710,
-    "category": "bags",
-    "categoryLabel": "Bags & Luggage",
-    "rating": 4.9,
-    "reviewsCount": 81,
-    "description": "Modern urban backpack with padded tablet and laptop vault.",
-    "images": ["https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/409968372348671186/",
-    "colors": [{ "name": "Black", "hex": "#111111" }],
-    "sizes": ["One Size"]
-  },
-  {
-    "id": "ftw-1",
-    "name": "Aurelius Heritage Chelsea Boot",
-    "price": 680,
-    "category": "footwear",
-    "categoryLabel": "Footwear",
-    "rating": 4.8,
-    "reviewsCount": 76,
-    "description": "Goodyear welted Chelsea boots with double-thick leather sole.",
-    "images": ["https://images.unsplash.com/photo-1638247025967-b4e38f787b76?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/4610278741293817920/",
-    "colors": [{ "name": "Burnished Tan", "hex": "#A0522D" }],
-    "sizes": ["40", "41", "42", "43", "44"]
-  },
-  {
-    "id": "ftw-2",
-    "name": "Florentine Leather Dress Loafer",
-    "price": 590,
-    "category": "footwear",
-    "categoryLabel": "Footwear",
-    "rating": 4.9,
-    "reviewsCount": 52,
-    "description": "Hand-burnished crust calfskin dress loafers.",
-    "images": ["https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/197173289935721594/",
-    "colors": [{ "name": "Espresso", "hex": "#2B1B17" }],
-    "sizes": ["41", "42", "43", "44"]
-  },
-  {
-    "id": "ftw-3",
-    "name": "Handcrafted Leather Sneaker",
-    "price": 450,
-    "category": "footwear",
-    "categoryLabel": "Footwear",
-    "rating": 4.7,
-    "reviewsCount": 88,
-    "description": "Minimalist low-top leather sneaker with stitched cupsole.",
-    "images": ["https://images.unsplash.com/photo-1638247025967-b4e38f787b76?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/672514156903354734/",
-    "colors": [{ "name": "White & Brown", "hex": "#FFFFFF" }],
-    "sizes": ["40", "41", "42", "43", "44", "45"]
-  },
-  {
-    "id": "ftw-4",
-    "name": "Classic Oxford Dress Shoe",
-    "price": 620,
-    "category": "footwear",
-    "categoryLabel": "Footwear",
-    "rating": 5.0,
-    "reviewsCount": 60,
-    "description": "Formal cap-toe oxford with traditional closed lacing.",
-    "images": ["https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/6262886978616844/",
-    "colors": [{ "name": "Raven Black", "hex": "#111111" }],
-    "sizes": ["40", "41", "42", "43", "44"]
-  },
-  {
-    "id": "ftw-5",
-    "name": "Rugged Lace-Up Heritage Boot",
-    "price": 720,
-    "category": "footwear",
-    "categoryLabel": "Footwear",
-    "rating": 4.9,
-    "reviewsCount": 105,
-    "description": "Heavy-duty outdoor boot with resoleable rubber lug outsole.",
-    "images": ["https://images.unsplash.com/photo-1638247025967-b4e38f787b76?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/35395547065429732/",
-    "colors": [{ "name": "Cognac", "hex": "#8B4513" }],
-    "sizes": ["41", "42", "43", "44", "45"]
-  },
-  {
-    "id": "ftw-6",
-    "name": "Double Monk Strap Shoe",
-    "price": 640,
-    "category": "footwear",
-    "categoryLabel": "Footwear",
-    "rating": 4.8,
-    "reviewsCount": 41,
-    "description": "Italian calfskin dress shoe with dual antique brass buckles.",
-    "images": ["https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/98727416831345399/",
-    "colors": [{ "name": "Mahogany", "hex": "#3D2314" }],
-    "sizes": ["40", "41", "42", "43"]
-  },
-  {
-    "id": "ftw-7",
-    "name": "Suede Chelsea Boot",
-    "price": 650,
-    "category": "footwear",
-    "categoryLabel": "Footwear",
-    "rating": 4.6,
-    "reviewsCount": 37,
-    "description": "Tuscan water-resistant suede with double elastic gussets.",
-    "images": ["https://images.unsplash.com/photo-1638247025967-b4e38f787b76?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/4433299631012616/",
-    "colors": [{ "name": "Sand Suede", "hex": "#C2B280" }],
-    "sizes": ["40", "41", "42", "43", "44"]
-  },
-  {
-    "id": "ftw-8",
-    "name": "Penny Loafer Slip-On",
-    "price": 570,
-    "category": "footwear",
-    "categoryLabel": "Footwear",
-    "rating": 4.7,
-    "reviewsCount": 48,
-    "description": "Hand-stitched penny loafer with cushioned leather insoles.",
-    "images": ["https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/51861833203731845/",
-    "colors": [{ "name": "Burgundy", "hex": "#800020" }],
-    "sizes": ["41", "42", "43", "44"]
-  },
-  {
-    "id": "ftw-9",
-    "name": "Brogue Wingtip Derby",
-    "price": 630,
-    "category": "footwear",
-    "categoryLabel": "Footwear",
-    "rating": 4.9,
-    "reviewsCount": 69,
-    "description": "Hand-punched brogue decoration along classic wingtip lines.",
-    "images": ["https://images.unsplash.com/photo-1638247025967-b4e38f787b76?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/4604227038426659200/",
-    "colors": [{ "name": "Tan", "hex": "#A0522D" }],
-    "sizes": ["40", "41", "42", "43", "44"]
-  },
-  {
-    "id": "ftw-10",
-    "name": "Heritage Desert Chukka Boot",
-    "price": 590,
-    "category": "footwear",
-    "categoryLabel": "Footwear",
-    "rating": 4.8,
-    "reviewsCount": 55,
-    "description": "Ankle-high Chukka boots with natural crepe rubber sole.",
-    "images": ["https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&q=80"],
-    "pinterestUrl": "https://www.pinterest.com/pin/814307176416857831/",
-    "colors": [{ "name": "Dark Brown", "hex": "#2B1B17" }],
-    "sizes": ["40", "41", "42", "43", "44"]
-  },
-  {
     "id": "belt-01",
     "name": "The Sovereign Artisan Bridle Belt",
-    "price": 165,
     "category": "belts",
     "categoryLabel": "Belts & Straps",
-    "rating": 5.0,
-    "reviewsCount": 38,
+    "price": 165,
     "description": "Full-grain vegetable-tanned bridle leather with hand-burnished beveled edges, solid brushed brass buckle, and beeswax edge finish.",
+    "stock": 20,
+    "rating": 5,
+    "reviewsCount": 1,
+    "isNew": false,
+    "featured": true,
+    "hidden": false,
+    "is_hidden": false,
     "images": [
       "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80"
     ],
-    "featured": true,
-    "stock": 15,
     "colors": [
-      { "name": "Cognac Brown", "hex": "#8B4513" },
-      { "name": "Obsidian Black", "hex": "#1A1A1A" }
+      {
+        "name": "Cognac Brown",
+        "hex": "#8B4513"
+      },
+      {
+        "name": "Obsidian Black",
+        "hex": "#1A1A1A"
+      }
     ],
-    "sizes": ["32", "34", "36", "38", "40", "42"]
-  },
-  {
-    "id": "belt-02",
-    "name": "The Addis Heritage Dress Belt",
-    "price": 145,
-    "category": "belts",
-    "categoryLabel": "Belts & Straps",
-    "rating": 4.9,
-    "reviewsCount": 29,
-    "description": "Refined 32mm calfskin dress belt with hand-sewn saddle stitching, solid antique nickel hardware, and feather-stitched edge lining.",
-    "images": [
-      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&q=80"
+    "sizes": [
+      "32",
+      "34",
+      "36",
+      "38",
+      "40",
+      "42"
     ],
-    "featured": false,
-    "stock": 18,
-    "colors": [
-      { "name": "Espresso Dark Brown", "hex": "#3D2314" },
-      { "name": "Classic Tan", "hex": "#D27D2D" }
+    "reviews": [
+      {
+        "id": "rev-1794677881627",
+        "author": "Abebe Bekele",
+        "rating": 5,
+        "date": "Just now",
+        "comment": "Exceptional Tuscan calfskin patina and solid brass buckle. Truly heirloom quality.",
+        "verified": true
+      }
     ],
-    "sizes": ["32", "34", "36", "38", "40", "42"]
+    "created_at": "2026-11-11T17:01:50.104Z"
   },
   {
     "id": "belt-03",
     "name": "The Entoto Reversible Luxury Belt",
-    "price": 195,
     "category": "belts",
-    "categoryLabel": "Belts & Straps",
-    "rating": 5.0,
-    "reviewsCount": 42,
+    "categoryLabel": "BELTS",
+    "price": 195,
     "description": "Double-faced reversible bridle leather featuring rich Cognac on one side and Obsidian Black on the reverse, with swivel titanium buckle.",
+    "stock": 12,
+    "rating": 5,
+    "reviewsCount": 42,
+    "isNew": false,
+    "featured": true,
+    "hidden": false,
+    "is_hidden": false,
     "images": [
       "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&q=80"
     ],
-    "featured": true,
-    "stock": 12,
     "colors": [
-      { "name": "Cognac / Black Reversible", "hex": "#795548" }
+      {
+        "name": "Cognac / Black Reversible",
+        "hex": "#795548"
+      }
     ],
-    "sizes": ["32", "34", "36", "38", "40", "42"]
+    "sizes": [
+      "32",
+      "34",
+      "36",
+      "38",
+      "40",
+      "42"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-11T17:01:50.084Z"
+  },
+  {
+    "id": "belt-02",
+    "name": "The Addis Heritage Dress Belt",
+    "category": "belts",
+    "categoryLabel": "Belts & Straps",
+    "price": 145,
+    "description": "Refined 32mm calfskin dress belt with hand-sewn saddle stitching, solid antique nickel hardware, and feather-stitched edge lining.",
+    "stock": 18,
+    "rating": 4.9,
+    "reviewsCount": 29,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Espresso Dark Brown",
+        "hex": "#3D2314"
+      },
+      {
+        "name": "Classic Tan",
+        "hex": "#D27D2D"
+      }
+    ],
+    "sizes": [
+      "32",
+      "34",
+      "36",
+      "38",
+      "40",
+      "42"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-11T17:01:50.117Z"
+  },
+  {
+    "id": "ftw-9",
+    "name": "Brogue Wingtip Derby",
+    "category": "footwear",
+    "categoryLabel": "FOOTWEAR",
+    "price": 630,
+    "description": "Hand-punched brogue decoration along classic wingtip lines.",
+    "stock": 10,
+    "rating": 4.9,
+    "reviewsCount": 69,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/736x/ea/22/07/ea220765c99acbdf09e6aa7f2a9fec71.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Tan",
+        "hex": "#A0522D"
+      }
+    ],
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.914Z"
+  },
+  {
+    "id": "ftw-8",
+    "name": "Penny Loafer Slip-On",
+    "category": "footwear",
+    "categoryLabel": "Footwear",
+    "price": 570,
+    "description": "Hand-stitched penny loafer with cushioned leather insoles.",
+    "stock": 10,
+    "rating": 4.7,
+    "reviewsCount": 48,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Burgundy",
+        "hex": "#800020"
+      }
+    ],
+    "sizes": [
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.914Z"
+  },
+  {
+    "id": "ftw-7",
+    "name": "Suede Chelsea Boot",
+    "category": "footwear",
+    "categoryLabel": "FOOTWEAR",
+    "price": 650,
+    "description": "Tuscan water-resistant suede with double elastic gussets.",
+    "stock": 10,
+    "rating": 4.6,
+    "reviewsCount": 37,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/1200x/1b/02/c3/1b02c3e9a4ef947c346ae67d687c124a.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Sand Suede",
+        "hex": "#C2B280"
+      }
+    ],
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.914Z"
+  },
+  {
+    "id": "ftw-10",
+    "name": "Heritage Desert Chukka Boot",
+    "category": "footwear",
+    "categoryLabel": "FOOTWEAR",
+    "price": 590,
+    "description": "Ankle-high Chukka boots with natural crepe rubber sole.",
+    "stock": 14,
+    "rating": 4.8,
+    "reviewsCount": 55,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/1200x/05/19/d1/0519d14bcfc36b4332c093cffd38a931.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Dark Brown",
+        "hex": "#2B1B17"
+      }
+    ],
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.914Z"
+  },
+  {
+    "id": "bag-10",
+    "name": "Commuter Slim Backpack",
+    "category": "bags",
+    "categoryLabel": "Bags & Luggage",
+    "price": 710,
+    "description": "Modern urban backpack with padded tablet and laptop vault.",
+    "stock": 10,
+    "rating": 4.9,
+    "reviewsCount": 81,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#111111"
+      }
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.913Z"
+  },
+  {
+    "id": "ftw-6",
+    "name": "Double Monk Strap Shoe",
+    "category": "footwear",
+    "categoryLabel": "FOOTWEAR",
+    "price": 640,
+    "description": "Italian calfskin dress shoe with dual antique brass buckles.",
+    "stock": 10,
+    "rating": 4.8,
+    "reviewsCount": 41,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/1200x/12/21/32/122132f3f268f3728e7e2ff3dcab027a.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Mahogany",
+        "hex": "#3D2314"
+      }
+    ],
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.913Z"
+  },
+  {
+    "id": "ftw-5",
+    "name": "Rugged Lace-Up Heritage Boot",
+    "category": "footwear",
+    "categoryLabel": "FOOTWEAR",
+    "price": 720,
+    "description": "Heavy-duty outdoor boot with resoleable rubber lug outsole.",
+    "stock": 10,
+    "rating": 4.9,
+    "reviewsCount": 105,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/1200x/c0/c4/e2/c0c4e241d1022828b7f893265d515a30.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Cognac",
+        "hex": "#8B4513"
+      }
+    ],
+    "sizes": [
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.913Z"
+  },
+  {
+    "id": "ftw-4",
+    "name": "Classic Oxford Dress Shoe",
+    "category": "footwear",
+    "categoryLabel": "FOOTWEAR",
+    "price": 620,
+    "description": "Formal cap-toe oxford with traditional closed lacing.",
+    "stock": 10,
+    "rating": 5,
+    "reviewsCount": 60,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/1200x/c6/c0/2d/c6c02dfccd10f5c0edd75fd44b6e2399.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Raven Black",
+        "hex": "#111111"
+      }
+    ],
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.913Z"
+  },
+  {
+    "id": "ftw-3",
+    "name": "Handcrafted Leather Sneaker",
+    "category": "footwear",
+    "categoryLabel": "FOOTWEAR",
+    "price": 450,
+    "description": "Minimalist low-top leather sneaker with stitched cupsole.",
+    "stock": 10,
+    "rating": 4.7,
+    "reviewsCount": 88,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/736x/15/93/ac/1593acd5148107d85b39e3745bfc5295.jpg"
+    ],
+    "colors": [
+      {
+        "name": "White & Brown",
+        "hex": "#FFFFFF"
+      }
+    ],
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.913Z"
+  },
+  {
+    "id": "ftw-2",
+    "name": "Florentine Leather Dress Loafer",
+    "category": "footwear",
+    "categoryLabel": "FOOTWEAR",
+    "price": 590,
+    "description": "Hand-burnished crust calfskin dress loafers.",
+    "stock": 10,
+    "rating": 4.9,
+    "reviewsCount": 52,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/1200x/d4/2e/3f/d42e3fb2101c5abeabf7fe3f62a905c3.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Espresso",
+        "hex": "#2B1B17"
+      }
+    ],
+    "sizes": [
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.913Z"
+  },
+  {
+    "id": "bag-9",
+    "name": "Heritage Satchel Bag",
+    "category": "bags",
+    "categoryLabel": "Bags & Luggage",
+    "price": 750,
+    "description": "Vintage style satchel with antique brass buckle fasteners.",
+    "stock": 10,
+    "rating": 4.7,
+    "reviewsCount": 44,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/736x/49/10/36/491036b8b304c745eb0f54f74994fafb.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Mahogany",
+        "hex": "#3D2314"
+      }
+    ],
+    "sizes": [
+      "Medium"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.913Z"
+  },
+  {
+    "id": "ftw-1",
+    "name": "Aurelius Heritage Chelsea Boot",
+    "category": "footwear",
+    "categoryLabel": "FOOTWEAR",
+    "price": 680,
+    "description": "Goodyear welted Chelsea boots with double-thick leather sole.",
+    "stock": 10,
+    "rating": 4.8,
+    "reviewsCount": 76,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/736x/d9/c7/87/d9c7875c88e99ce8e1423c47f7d23f0f.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Burnished Tan",
+        "hex": "#A0522D"
+      }
+    ],
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.913Z"
+  },
+  {
+    "id": "bag-2",
+    "name": "Atelier Heritage Tote Bag",
+    "category": "bags",
+    "categoryLabel": "Bags & Luggage",
+    "price": 850,
+    "description": "Structured leather tote bag with reinforced handles.",
+    "stock": 10,
+    "rating": 4.9,
+    "reviewsCount": 88,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/1200x/3c/30/d2/3c30d24fd46a4af95b132db73a408d60.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Cognac",
+        "hex": "#9E4712"
+      }
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.913Z"
+  },
+  {
+    "id": "bag-3",
+    "name": "Executive Leather Briefcase",
+    "category": "bags",
+    "categoryLabel": "Bags & Luggage",
+    "price": 950,
+    "description": "Dual-section laptop briefcase with brass lock key fob.",
+    "stock": 10,
+    "rating": 4.8,
+    "reviewsCount": 65,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/1200x/27/d4/11/27d411fce48edc831e0202044f6bb7cd.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#111111"
+      }
+    ],
+    "sizes": [
+      "Fits 16 inch Laptop"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.913Z"
+  },
+  {
+    "id": "bag-4",
+    "name": "Vagabond Travel Backpack",
+    "category": "bags",
+    "categoryLabel": "Bags & Luggage",
+    "price": 780,
+    "description": "Padded ergonomic leather straps with laptop slot.",
+    "stock": 10,
+    "rating": 4.9,
+    "reviewsCount": 112,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/736x/d9/e8/97/d9e897f2f51d90e6e74499c4c902fa1f.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Brown",
+        "hex": "#3D2314"
+      }
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.913Z"
+  },
+  {
+    "id": "bag-5",
+    "name": "Crossbody Messenger Bag",
+    "category": "bags",
+    "categoryLabel": "Bags & Luggage",
+    "price": 640,
+    "description": "Sleek messenger bag with adjustable shoulder webbing.",
+    "stock": 10,
+    "rating": 4.7,
+    "reviewsCount": 49,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Tan",
+        "hex": "#A0522D"
+      }
+    ],
+    "sizes": [
+      "Medium"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.913Z"
+  },
+  {
+    "id": "bag-6",
+    "name": "Weekender Holdall Bag",
+    "category": "bags",
+    "categoryLabel": "Bags & Luggage",
+    "price": 870,
+    "description": "Classic cylinder holdall engineered for short trips.",
+    "stock": 10,
+    "rating": 4.9,
+    "reviewsCount": 78,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/736x/26/fa/8f/26fa8fccbe8072ee39d4603a9aa2e92e.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Dark Brown",
+        "hex": "#2B1B17"
+      }
+    ],
+    "sizes": [
+      "40L"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.913Z"
+  },
+  {
+    "id": "bag-7",
+    "name": "Structured Luxury Shoulder Bag",
+    "category": "bags",
+    "categoryLabel": "Bags & Luggage",
+    "price": 690,
+    "description": "Minimalist structured shoulder bag in full-grain calfskin.",
+    "stock": 10,
+    "rating": 4.6,
+    "reviewsCount": 35,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/1200x/70/ee/4b/70ee4b2f481d0f2c0719a003dacba404.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#111111"
+      }
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.913Z"
+  },
+  {
+    "id": "bag-8",
+    "name": "Leather Travel Toiletry Kit",
+    "category": "bags",
+    "categoryLabel": "Bags & Luggage",
+    "price": 220,
+    "description": "Water-resistant interior Doppler bag for grooming essentials.",
+    "stock": 10,
+    "rating": 4.8,
+    "reviewsCount": 90,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/736x/ff/58/23/ff582339e80acc12ea4fb09747411c3c.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Cognac",
+        "hex": "#8B4513"
+      }
+    ],
+    "sizes": [
+      "Small"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.913Z"
+  },
+  {
+    "id": "wlt-9",
+    "name": "Key Organizer & Card Holder",
+    "category": "wallets",
+    "categoryLabel": "Wallets & Small Goods",
+    "price": 120,
+    "description": "Dual functionality pouch with built-in brass key ring.",
+    "stock": 10,
+    "rating": 4.5,
+    "reviewsCount": 33,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Tan",
+        "hex": "#A0522D"
+      }
+    ],
+    "sizes": [
+      "Compact"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.912Z"
+  },
+  {
+    "id": "wlt-8",
+    "name": "Long Continental Wallet",
+    "category": "wallets",
+    "categoryLabel": "Wallets & Small Goods",
+    "price": 250,
+    "description": "Full-length executive wallet featuring multiple bill compartments.",
+    "stock": 10,
+    "rating": 4.7,
+    "reviewsCount": 51,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/736x/eb/f9/94/ebf994e9accd35f86899cb97ee1fe30f.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#111111"
+      }
+    ],
+    "sizes": [
+      "Long"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.912Z"
+  },
+  {
+    "id": "wlt-7",
+    "name": "Hand-Stitched Artisan Wallet",
+    "category": "wallets",
+    "categoryLabel": "Wallets & Small Goods",
+    "price": 220,
+    "description": "Burnished natural wax edges with antique brass button clasp.",
+    "stock": 10,
+    "rating": 4.9,
+    "reviewsCount": 73,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/736x/70/97/ec/7097ec309932a8a9058b6e814c2ec941.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Cognac",
+        "hex": "#8B4513"
+      }
+    ],
+    "sizes": [
+      "Compact"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.912Z"
+  },
+  {
+    "id": "wlt-6",
+    "name": "Money Clip Leather Sleeve",
+    "category": "wallets",
+    "categoryLabel": "Wallets & Small Goods",
+    "price": 130,
+    "description": "Integrated magnetic brass clip with quick-access card slots.",
+    "stock": 10,
+    "rating": 4.6,
+    "reviewsCount": 40,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/736x/f5/2f/9b/f52f9b189d170f996e2dbd1dc5235b55.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Dark Brown",
+        "hex": "#2B1B17"
+      }
+    ],
+    "sizes": [
+      "Compact"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.912Z"
+  },
+  {
+    "id": "wlt-5",
+    "name": "Zippered Leather Wallet",
+    "category": "wallets",
+    "categoryLabel": "Wallets & Small Goods",
+    "price": 195,
+    "description": "Full perimeter brass zipper for maximum security.",
+    "stock": 10,
+    "rating": 4.8,
+    "reviewsCount": 62,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/1200x/f5/dd/f8/f5ddf8e66bd9945b45e169548d639d46.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#111111"
+      }
+    ],
+    "sizes": [
+      "Standard"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.912Z"
+  },
+  {
+    "id": "wlt-4",
+    "name": "Executive Passport & Travel Folio",
+    "category": "wallets",
+    "categoryLabel": "Wallets & Small Goods",
+    "price": 260,
+    "description": "Holds passport, travel documents, cards, and cash seamlessly.",
+    "stock": 10,
+    "rating": 5,
+    "reviewsCount": 95,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/736x/82/f5/03/82f5032719c341036c40cae6dcc653b5.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Tan",
+        "hex": "#A0522D"
+      }
+    ],
+    "sizes": [
+      "Travel Size"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.912Z"
+  },
+  {
+    "id": "wlt-3",
+    "name": "Classic Trifold Wallet",
+    "category": "wallets",
+    "categoryLabel": "Wallets & Small Goods",
+    "price": 210,
+    "description": "Full capacity trifold leather wallet with coin compartment.",
+    "stock": 10,
+    "rating": 4.7,
+    "reviewsCount": 88,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/736x/c3/04/6b/c3046b849503db8feafa484025bb0365.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Brown",
+        "hex": "#3D2314"
+      }
+    ],
+    "sizes": [
+      "Standard"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.912Z"
+  },
+  {
+    "id": "wlt-2",
+    "name": "Minimalist Front Pocket Wallet",
+    "category": "wallets",
+    "categoryLabel": "Wallets & Small Goods",
+    "price": 140,
+    "description": "Ultra-thin card sleeve for up to 8 cards and folded currency.",
+    "stock": 10,
+    "rating": 4.8,
+    "reviewsCount": 115,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/1200x/2f/dd/80/2fdd80f9b0b5c3573b1a780a0badff47.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#111111"
+      }
+    ],
+    "sizes": [
+      "Compact"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.912Z"
+  },
+  {
+    "id": "wlt-10",
+    "name": "Heritage Gold Stamp Card Case",
+    "category": "wallets",
+    "categoryLabel": "Wallets & Small Goods",
+    "price": 150,
+    "description": "Tuscan vegetable-tanned leather with gold foil Kiru crest.",
+    "stock": 10,
+    "rating": 4.9,
+    "reviewsCount": 104,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Mahogany",
+        "hex": "#3D2314"
+      }
+    ],
+    "sizes": [
+      "Compact"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.912Z"
+  },
+  {
+    "id": "wlt-1",
+    "name": "Slim Bifold Leather Folio",
+    "category": "wallets",
+    "categoryLabel": "Wallets & Small Goods",
+    "price": 180,
+    "description": "Saddle-stitched slim wallet with RFID protection.",
+    "stock": 10,
+    "rating": 4.9,
+    "reviewsCount": 210,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/736x/27/50/4a/27504a9bd139652cdf93d0234689ea59.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Cognac",
+        "hex": "#8B4513"
+      }
+    ],
+    "sizes": [
+      "Compact"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.912Z"
+  },
+  {
+    "id": "jkt-9",
+    "name": "Artisan Burnished Bomber",
+    "category": "jackets",
+    "categoryLabel": "Jackets",
+    "price": 1190,
+    "description": "Ribbed hem and cuff bomber jacket in full-grain leather.",
+    "stock": 10,
+    "rating": 4.7,
+    "reviewsCount": 54,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/736x/4c/cf/4b/4ccf4bb9edc80f4b3167dd2bcace15e5.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Mahogany",
+        "hex": "#3D2314"
+      }
+    ],
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.912Z"
+  },
+  {
+    "id": "jkt-8",
+    "name": "Cafe Racer Leather Jacket",
+    "category": "jackets",
+    "categoryLabel": "Jackets",
+    "price": 1280,
+    "description": "Minimalist cafe racer collar with snap button closure.",
+    "stock": 10,
+    "rating": 4.9,
+    "reviewsCount": 89,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/1200x/53/67/a1/5367a126b957548f7f3e8e1fa16e3312.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Obsidian Black",
+        "hex": "#111111"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.912Z"
+  },
+  {
+    "id": "jkt-7",
+    "name": "Field Utility Leather Coat",
+    "category": "jackets",
+    "categoryLabel": "Jackets",
+    "price": 1350,
+    "description": "Multiple pocket utility leather coat with durable zip closure.",
+    "stock": 10,
+    "rating": 4.8,
+    "reviewsCount": 77,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/736x/f9/ed/ba/f9edbad7039463017f919371b75fe7b8.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Tan",
+        "hex": "#A0522D"
+      }
+    ],
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.912Z"
+  },
+  {
+    "id": "jkt-6",
+    "name": "Modern Tailored Leather Blazer",
+    "category": "jackets",
+    "categoryLabel": "JACKETS",
+    "price": 1150,
+    "description": "Formal tailored leather blazer for evening luxury wear.",
+    "stock": 10,
+    "rating": 4.6,
+    "reviewsCount": 38,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/1200x/1a/b1/d2/1ab1d26d8cef52972f2576a0e42b1b59.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#111111"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.912Z"
+  },
+  {
+    "id": "jkt-5",
+    "name": "Aviator Shearling Leather Jacket",
+    "category": "jackets",
+    "categoryLabel": "JACKETS",
+    "price": 1400,
+    "description": "Heavy-duty cold weather aviator jacket with fur collar.",
+    "stock": 10,
+    "rating": 4.9,
+    "reviewsCount": 110,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/1200x/90/a2/11/90a2115d1e3917890832d63f82a3bb68.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Dark Brown",
+        "hex": "#2B1B17"
+      }
+    ],
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.912Z"
+  },
+  {
+    "id": "jkt-4",
+    "name": "Tuscan Urban Biker",
+    "category": "jackets",
+    "categoryLabel": "Jackets",
+    "price": 1220,
+    "description": "Italian tanned calfskin with modern tailored silhouette.",
+    "stock": 10,
+    "rating": 4.7,
+    "reviewsCount": 65,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Cognac",
+        "hex": "#9E4712"
+      }
+    ],
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.912Z"
+  },
+  {
+    "id": "jkt-3",
+    "name": "Heritage Rider Biker Jacket",
+    "category": "jackets",
+    "categoryLabel": "JACKETS",
+    "price": 1180,
+    "description": "Classic rider style with smooth interior silk lining.",
+    "stock": 10,
+    "rating": 5,
+    "reviewsCount": 42,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/736x/86/6a/02/866a023fcee10dcaeb96a2c8aeabb36f.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#111111"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.912Z"
+  },
+  {
+    "id": "jkt-2",
+    "name": "Vintage Oak Leather Jacket",
+    "category": "jackets",
+    "categoryLabel": "JACKETS",
+    "price": 1300,
+    "description": "Premium distressed leather jacket with custom hardware.",
+    "stock": 10,
+    "rating": 4.8,
+    "reviewsCount": 94,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/1200x/9c/72/70/9c7270453f7dc451f4dd9cee4bcbb7ac.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Brown",
+        "hex": "#3D2314"
+      }
+    ],
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.912Z"
+  },
+  {
+    "id": "jkt-10",
+    "name": "Sovereign Special Edition Jacket",
+    "category": "jackets",
+    "categoryLabel": "JACKETS",
+    "price": 1500,
+    "description": "Limited series hand-burnished luxury leather jacket.",
+    "stock": 10,
+    "rating": 5,
+    "reviewsCount": 150,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/1200x/fc/4d/5e/fc4d5e053c5eb13a14985178074d0b00.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Gold Amber",
+        "hex": "#8B4513"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.912Z"
+  },
+  {
+    "id": "bag-1",
+    "name": "Monarch Executive Duffle",
+    "category": "bags",
+    "categoryLabel": "Bags & Luggage",
+    "price": 890,
+    "description": "Spacious travel duffle bag constructed from English bridle hide.",
+    "stock": 10,
+    "rating": 5,
+    "reviewsCount": 94,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/736x/c5/2d/36/c52d3637b8d21a03202771b4c89ce588.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Mahogany Gold",
+        "hex": "#3D2314"
+      }
+    ],
+    "sizes": [
+      "45L"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.912Z"
+  },
+  {
+    "id": "jkt-1",
+    "name": "Sovereign Leather Jacket Vol. 1",
+    "category": "jackets",
+    "categoryLabel": "JACKETS",
+    "price": 1250,
+    "description": "Handcrafted full-grain Italian leather jacket with antique brass trim.",
+    "stock": 10,
+    "rating": 4.9,
+    "reviewsCount": 128,
+    "isNew": false,
+    "featured": false,
+    "hidden": false,
+    "is_hidden": false,
+    "images": [
+      "https://i.pinimg.com/736x/31/6c/32/316c32aeec4c388e63f14452b427a870.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Obsidian Black",
+        "hex": "#111111"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "reviews": [],
+    "created_at": "2026-11-06T20:14:19.911Z"
   }
 ]

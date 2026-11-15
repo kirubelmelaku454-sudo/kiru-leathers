@@ -168,64 +168,75 @@ const migrateFromJsonIfEmpty = () => {
     }
   }
 
-  const productsCount = db.prepare('SELECT COUNT(*) as count FROM products').get().count;
-  if (productsCount === 0) {
-    const productsJsonPath = path.join(dataDir, 'products.json');
-    if (fs.existsSync(productsJsonPath)) {
-      try {
-        const products = JSON.parse(fs.readFileSync(productsJsonPath, 'utf-8'));
-        const insertProduct = db.prepare(`
-          INSERT OR IGNORE INTO products (
-            id, name, category, category_label, price, description, stock,
-            rating, reviews_count, is_new, featured, images_json, colors_json, sizes_json, created_at
-          ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        `);
-        const insertReview = db.prepare(`
-          INSERT OR IGNORE INTO reviews (id, product_id, author, rating, comment, date, verified, created_at)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-        `);
+  const productsJsonPath = path.join(dataDir, 'products.json');
+  if (fs.existsSync(productsJsonPath)) {
+    try {
+      const products = JSON.parse(fs.readFileSync(productsJsonPath, 'utf-8'));
+      const upsertProduct = db.prepare(`
+        INSERT INTO products (
+          id, name, category, category_label, price, description, stock,
+          rating, reviews_count, is_new, featured, is_hidden, images_json, colors_json, sizes_json, created_at
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ON CONFLICT(id) DO UPDATE SET
+          name = excluded.name,
+          category = excluded.category,
+          category_label = excluded.category_label,
+          price = excluded.price,
+          description = excluded.description,
+          stock = excluded.stock,
+          images_json = excluded.images_json,
+          colors_json = excluded.colors_json,
+          sizes_json = excluded.sizes_json,
+          rating = excluded.rating,
+          featured = excluded.featured,
+          is_hidden = excluded.is_hidden
+      `);
+      const insertReview = db.prepare(`
+        INSERT OR IGNORE INTO reviews (id, product_id, author, rating, comment, date, verified, created_at)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+      `);
 
-        const insertMany = db.transaction((prods) => {
-          for (const p of prods) {
-            insertProduct.run(
-              p.id,
-              p.name,
-              p.category,
-              p.categoryLabel || p.category.toUpperCase(),
-              p.price,
-              p.description || '',
-              p.stock !== undefined ? p.stock : 10,
-              p.rating || 5.0,
-              p.reviewsCount || (p.reviews ? p.reviews.length : 0),
-              p.isNew ? 1 : 0,
-              p.featured ? 1 : 0,
-              JSON.stringify(p.images || []),
-              JSON.stringify(p.colors || []),
-              JSON.stringify(p.sizes || []),
-              new Date().toISOString()
-            );
+      const insertMany = db.transaction((prods) => {
+        for (const p of prods) {
+          upsertProduct.run(
+            p.id,
+            p.name,
+            p.category,
+            p.categoryLabel || (p.category.charAt(0).toUpperCase() + p.category.slice(1)),
+            p.price,
+            p.description || '',
+            p.stock !== undefined ? p.stock : 10,
+            p.rating || 5.0,
+            p.reviewsCount || (p.reviews ? p.reviews.length : 0),
+            p.isNew ? 1 : 0,
+            p.featured ? 1 : 0,
+            p.hidden || p.is_hidden ? 1 : 0,
+            JSON.stringify(p.images || []),
+            JSON.stringify(p.colors || []),
+            JSON.stringify(p.sizes || []),
+            p.created_at || new Date().toISOString()
+          );
 
-            if (Array.isArray(p.reviews)) {
-              for (const r of p.reviews) {
-                insertReview.run(
-                  r.id || `rev_${Date.now()}_${Math.random().toString(36).substr(2, 4)}`,
-                  p.id,
-                  r.author || 'Anonymous',
-                  r.rating || 5,
-                  r.comment || '',
-                  r.date || 'Recently',
-                  r.verified ? 1 : 0,
-                  new Date().toISOString()
-                );
-              }
+          if (Array.isArray(p.reviews)) {
+            for (const r of p.reviews) {
+              insertReview.run(
+                r.id || `rev_${Date.now()}_${Math.random().toString(36).substr(2, 4)}`,
+                p.id,
+                r.author || 'Anonymous',
+                r.rating || 5,
+                r.comment || '',
+                r.date || 'Recently',
+                r.verified ? 1 : 0,
+                new Date().toISOString()
+              );
             }
           }
-        });
-        insertMany(products);
-        console.log(`📥 Migrated ${products.length} products into SQLite`);
-      } catch (e) {
-        console.error('Error migrating products:', e.message);
-      }
+        }
+      });
+      insertMany(products);
+      console.log(`📥 Synced ${products.length} products into SQLite`);
+    } catch (e) {
+      console.error('Error migrating products:', e.message);
     }
   }
 
@@ -346,7 +357,7 @@ const sqliteDb = {
 
   // Products
   getProducts: () => {
-    const rows = db.prepare('SELECT * FROM products ORDER BY featured DESC, rowid DESC').all();
+    const rows = db.prepare('SELECT * FROM products ORDER BY featured DESC, created_at DESC, rowid DESC').all();
     const reviewsStmt = db.prepare('SELECT * FROM reviews WHERE product_id = ? ORDER BY rowid DESC');
 
     return rows.map((r) => {
