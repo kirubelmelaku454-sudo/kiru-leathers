@@ -1300,7 +1300,9 @@ app.get('/api/health', (req, res) => {
 const distPath = path.resolve(__dirname, '../dist');
 if (fs.existsSync(distPath)) {
   app.use(express.static(distPath));
-  app.get('*', (req, res, next) => {
+  // Universal Express 5 SPA catch-all middleware
+  app.use((req, res, next) => {
+    if (req.method !== 'GET') return next();
     if (req.path.startsWith('/api') || req.path.startsWith('/uploads')) {
       return next();
     }
@@ -1315,7 +1317,7 @@ db.initDatabase()
     console.warn('Database initialization notice (continuing with fallback):', err.message);
   })
   .finally(() => {
-    app.listen(PORT, () => {
-      console.log(`🚀 Kiru Leathers Server running on http://localhost:${PORT}`);
+    app.listen(PORT, '0.0.0.0', () => {
+      console.log(`🚀 Kiru Leathers Server running on http://0.0.0.0:${PORT}`);
     });
   });
