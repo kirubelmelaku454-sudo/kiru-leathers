@@ -22,7 +22,8 @@ import {
   Scissors,
   User as UserIcon,
   Package,
-  Phone
+  Phone,
+  LogOut
 } from 'lucide-react';
 import { type Product, type ProductColor, type CartItem, type CartItemCustomization, type CraftsmanshipStep, type FAQItem, type ProductReview, type Order, type User, type CustomerMessage, type OrderNotification, type LookbookItem } from './types';
 import { DEFAULT_SITE_CONTENT, type SiteContent } from './data/defaultSiteContent';
@@ -1411,6 +1412,7 @@ export default function App() {
         lang={lang}
         onToggleLanguage={toggleLanguage}
         onOpenBespoke={() => setIsBespokeStudioOpen(true)}
+        onLogout={handleLogout}
       />
 
       <AnimatePresence>
@@ -1666,6 +1668,7 @@ export default function App() {
             onUpdateSiteContent={handleUpdateSiteContent}
             onUpdateProductStock={handleUpdateProductStock}
             onClose={() => setIsAdminPortalOpen(false)}
+            onLogout={handleLogout}
             onUpdateOrderStatus={handleUpdateOrderStatus}
             onVerifyPayment={handleVerifyPayment}
             onUpdateMessageStatus={handleUpdateMessageStatus}
@@ -1806,6 +1809,7 @@ interface HeaderProps {
   lang?: Language;
   onToggleLanguage?: () => void;
   onOpenBespoke?: () => void;
+  onLogout?: () => void;
 }
 
 function Header({
@@ -1833,7 +1837,8 @@ function Header({
   specialOffer,
   lang = 'en',
   onToggleLanguage,
-  onOpenBespoke
+  onOpenBespoke,
+  onLogout
 }: HeaderProps) {
   const [scrolled, setScrolled] = useState(false);
 
@@ -2011,6 +2016,19 @@ function Header({
             </button>
           )}
 
+          {/* Quick Sign Out button visible directly in Header for phone, tablet and desktop */}
+          {user && onLogout && (
+            <button
+              type="button"
+              onClick={onLogout}
+              className="px-2 sm:px-2.5 py-1 rounded-xl text-[10px] sm:text-xs font-mono border border-red-500/40 bg-red-500/10 hover:bg-red-500/20 text-red-300 hover:text-red-200 transition-all font-semibold flex items-center gap-1 shadow-xs shrink-0 cursor-pointer"
+              title="Sign Out (ከአካውንት ውጣ)"
+            >
+              <LogOut className="w-3 h-3 text-red-400" />
+              <span className="font-bold tracking-wider uppercase hidden sm:inline">Sign Out</span>
+            </button>
+          )}
+
           {/* Currency Switcher (visible on desktop md+) */}
           <button
             onClick={onToggleCurrency}
@@ -2174,8 +2192,8 @@ function Header({
                 
                 {/* Account / Role Card */}
                 {user?.role === 'admin' ? (
-                  <div className="p-3.5 rounded-2xl bg-[#3D2314] border border-[#D4AF37]/60 shadow-lg">
-                    <div className="flex items-center justify-between mb-2">
+                  <div className="p-3.5 rounded-2xl bg-[#3D2314] border border-[#D4AF37]/60 shadow-lg space-y-2">
+                    <div className="flex items-center justify-between">
                       <span className="text-[10px] font-mono uppercase tracking-wider text-amber-300 font-bold">
                         Store Administration
                       </span>
@@ -2199,10 +2217,24 @@ function Header({
                         </span>
                       )}
                     </button>
+                    {onLogout && (
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setMobileMenuOpen(false);
+                          onLogout();
+                        }}
+                        className="w-full py-2 px-3 rounded-xl border border-red-500/40 bg-red-500/10 hover:bg-red-500/20 text-red-300 font-mono text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-xs cursor-pointer"
+                        title="Sign Out (ከአካውንት ውጣ)"
+                      >
+                        <LogOut className="w-3.5 h-3.5 text-red-400" />
+                        <span>Sign Out (ከአካውንት ውጣ)</span>
+                      </button>
+                    )}
                   </div>
                 ) : user ? (
-                  <div className="p-3.5 rounded-2xl bg-gradient-to-r from-emerald-950/60 to-[#3D2314]/80 border border-emerald-500/50 shadow-lg">
-                    <div className="flex items-center justify-between mb-2">
+                  <div className="p-3.5 rounded-2xl bg-gradient-to-r from-emerald-950/60 to-[#3D2314]/80 border border-emerald-500/50 shadow-lg space-y-2">
+                    <div className="flex items-center justify-between">
                       <span className="text-[10px] font-mono uppercase tracking-wider text-emerald-300 font-bold">
                         Collector Profile
                       </span>
@@ -2226,6 +2258,20 @@ function Header({
                         </span>
                       )}
                     </button>
+                    {onLogout && (
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setMobileMenuOpen(false);
+                          onLogout();
+                        }}
+                        className="w-full py-2 px-3 rounded-xl border border-red-500/40 bg-red-500/10 hover:bg-red-500/20 text-red-300 font-mono text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-xs cursor-pointer"
+                        title="Sign Out (ከአካውንት ውጣ)"
+                      >
+                        <LogOut className="w-3.5 h-3.5 text-red-400" />
+                        <span>Sign Out (ከአካውንት ውጣ)</span>
+                      </button>
+                    )}
                   </div>
                 ) : (
                   <button

@@ -239,7 +239,7 @@ export const CustomerDashboardModal: React.FC<CustomerDashboardModalProps> = ({
       {/* ======================================================== */}
       {/* LUXURY LEFT SIDEBAR: User Info, Navigation, Sign Out     */}
       {/* ======================================================== */}
-      <aside className={`w-full md:w-72 lg:w-80 shrink-0 border-b md:border-b-0 md:border-r flex flex-col justify-between p-5 sm:p-6 z-20 ${
+      <aside className={`w-full md:w-72 lg:w-80 shrink-0 border-b md:border-b-0 md:border-r flex flex-col justify-between p-4 sm:p-6 z-20 max-h-[42vh] md:max-h-none overflow-y-auto md:overflow-visible ${
         isDark ? 'bg-[#111216] border-white/10' : 'bg-white border-stone-200 shadow-sm'
       }`}>
         <div>
@@ -247,15 +247,26 @@ export const CustomerDashboardModal: React.FC<CustomerDashboardModalProps> = ({
           <div className="flex items-center justify-between pb-5 border-b border-white/10 mb-6">
             <KiruLogo variant="horizontal" size="sm" theme={isDark ? 'dark' : 'light'} subtitleText="Collector Desk • Addis Ababa" />
 
-            <button
-              onClick={onClose}
-              className={`md:hidden p-2 rounded-xl transition-colors ${
-                isDark ? 'hover:bg-white/10 text-gray-400' : 'hover:bg-stone-100 text-stone-600'
-              }`}
-              title="Close Portal"
-            >
-              <X className="w-5 h-5" />
-            </button>
+            <div className="flex items-center gap-1.5 md:hidden">
+              <button
+                type="button"
+                onClick={onLogout}
+                className="px-2.5 py-1.5 rounded-xl border border-red-500/40 bg-red-500/10 hover:bg-red-500/20 text-red-300 font-mono text-xs font-semibold flex items-center gap-1 shadow-xs cursor-pointer"
+                title="Sign Out (ውጣ)"
+              >
+                <LogOut className="w-3.5 h-3.5 text-red-400" />
+                <span>Sign Out (ውጣ)</span>
+              </button>
+              <button
+                onClick={onClose}
+                className={`p-2 rounded-xl transition-colors ${
+                  isDark ? 'hover:bg-white/10 text-gray-400' : 'hover:bg-stone-100 text-stone-600'
+                }`}
+                title="Close Portal"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
           </div>
 
           {/* User Profile Card */}
@@ -435,15 +446,26 @@ export const CustomerDashboardModal: React.FC<CustomerDashboardModalProps> = ({
             </p>
           </div>
 
-          <button
-            onClick={onClose}
-            className={`hidden md:flex p-2.5 rounded-full transition-colors ${
-              isDark ? 'hover:bg-white/10 text-gray-400 hover:text-white' : 'hover:bg-stone-100 text-stone-600 hover:text-black'
-            }`}
-            title="Close Dashboard"
-          >
-            <X className="w-5 h-5" />
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={onLogout}
+              className="px-2.5 py-1.5 rounded-xl border border-red-500/40 bg-red-500/10 hover:bg-red-500/20 text-red-300 font-mono text-xs font-semibold flex items-center gap-1.5 transition-all shadow-xs cursor-pointer"
+              title="Sign Out (ውጣ)"
+            >
+              <LogOut className="w-3.5 h-3.5 text-red-400" />
+              <span>Sign Out (ውጣ)</span>
+            </button>
+            <button
+              onClick={onClose}
+              className={`p-2 rounded-xl md:rounded-full transition-colors ${
+                isDark ? 'hover:bg-white/10 text-gray-400 hover:text-white' : 'hover:bg-stone-100 text-stone-600 hover:text-black'
+              }`}
+              title="Close Dashboard"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
         </header>
 
         {/* Tab Content Container */}

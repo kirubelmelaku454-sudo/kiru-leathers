@@ -43,6 +43,7 @@ import {
   Award,
   Truck,
   Tag,
+  LogOut,
   Timer,
   Film,
   Video,
@@ -69,6 +70,7 @@ interface AdminPortalModalProps {
   onUpdateSiteContent?: (section: 'about' | 'contact', content: any) => Promise<boolean>;
   onUpdateProductStock?: (productId: string, newStock: number) => Promise<void> | void;
   onClose: () => void;
+  onLogout?: () => void;
   onUpdateOrderStatus: (orderId: string, status: Order['status']) => void;
   onVerifyPayment?: (orderId: string, action: 'approve' | 'reject', reason?: string) => void;
   onUpdateMessageStatus?: (messageId: string, status: CustomerMessage['status']) => void;
@@ -216,6 +218,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({
   onUpdateSiteContent,
   onUpdateProductStock,
   onClose,
+  onLogout,
   onUpdateOrderStatus,
   onVerifyPayment,
   onUpdateMessageStatus,
@@ -1377,6 +1380,22 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({
             </div>
           </div>
 
+          {/* Sign Out Button */}
+          {onLogout && (
+            <button
+              type="button"
+              onClick={() => {
+                onClose();
+                onLogout();
+              }}
+              className="w-full py-2 px-3 rounded-xl border border-red-500/30 bg-red-500/10 hover:bg-red-500/20 text-red-300 font-mono text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xs"
+              title="Sign Out of Admin Console (ከአካውንት ውጣ)"
+            >
+              <LogOut className="w-3.5 h-3.5 text-red-400" />
+              <span>Sign Out (ከአካውንት ውጣ)</span>
+            </button>
+          )}
+
           {/* Exit / Return to Storefront Button */}
           <button
             onClick={onClose}
@@ -1486,6 +1505,22 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({
               <span>Rate:</span>
               <strong className={isDark ? 'text-white' : 'text-stone-900'}>1 USD = {exchangeRate} ETB</strong>
             </span>
+
+            {/* Sign Out quick button */}
+            {onLogout && (
+              <button
+                type="button"
+                onClick={() => {
+                  onClose();
+                  onLogout();
+                }}
+                className="px-2.5 py-1.5 rounded-xl border border-red-500/40 bg-red-500/10 hover:bg-red-500/20 text-red-300 text-xs font-mono font-semibold transition-all flex items-center gap-1.5 cursor-pointer shadow-xs"
+                title="Sign Out of Admin Console (ከአካውንት ውጣ)"
+              >
+                <LogOut className="w-3.5 h-3.5 text-red-400" />
+                <span className="hidden sm:inline">Sign Out</span>
+              </button>
+            )}
 
             {/* Close / Return button */}
             <button
