@@ -42,6 +42,7 @@ db.exec(`
     reviews_count INTEGER DEFAULT 0,
     is_new INTEGER DEFAULT 0,
     featured INTEGER DEFAULT 0,
+    is_hidden INTEGER DEFAULT 0,
     images_json TEXT,
     colors_json TEXT,
     sizes_json TEXT,
@@ -144,6 +145,7 @@ try { db.exec('ALTER TABLE orders ADD COLUMN delivery_note TEXT'); } catch (e) {
 try { db.exec('ALTER TABLE reviews ADD COLUMN image_url TEXT'); } catch (e) {}
 try { db.exec('ALTER TABLE users ADD COLUMN loyalty_points INTEGER DEFAULT 0'); } catch (e) {}
 try { db.exec("ALTER TABLE users ADD COLUMN loyalty_tier TEXT DEFAULT 'Classic Member'"); } catch (e) {}
+try { db.exec('ALTER TABLE products ADD COLUMN is_hidden INTEGER DEFAULT 0'); } catch (e) {}
 
 // Auto-migration from existing JSON files if tables are empty
 const migrateFromJsonIfEmpty = () => {
@@ -265,17 +267,17 @@ const migrateFromJsonIfEmpty = () => {
             insertOrder.run(
               o.id,
               o.userId || null,
-              o.customer?.fullName || 'Collector',
-              o.customer?.email || '',
-              o.customer?.phone || '',
-              o.customer?.address || '',
-              o.customer?.city || 'Addis Ababa',
+              o.customerName || o.customer?.fullName || 'Collector',
+              o.email || o.customer?.email || '',
+              o.phone || o.customer?.phone || '',
+              o.shippingAddress?.address || o.customer?.address || '',
+              o.shippingAddress?.city || o.customer?.city || 'Addis Ababa',
               o.deliveryZoneId || o.customer?.deliveryZoneId || 'aa-bole',
               o.deliveryZoneName || o.customer?.deliveryZoneName || 'Bole & Central Addis',
-              o.subtotal || 0,
+              o.subtotal || o.total || 0,
               o.discount || 0,
               o.shipping || 0,
-              o.totalAmount || 0,
+              o.totalAmount || o.total || 0,
               o.currency || 'ETB',
               o.paymentMethod || 'mobile_transfer',
               o.paymentStatus || 'Approved',
